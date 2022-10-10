@@ -1,0 +1,85 @@
+<nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+  <div class="container">
+    <div class="navbar-wrapper">
+      <div class="navbar-toggle" (click)="sidebarToggle()">
+        <button type="button" class="navbar-toggler">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </button>
+      </div>
+      <a class="navbar-brand" routerLinkActive="active" [routerLink]="['/']">Devoted</a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-bar navbar-kebab"></span>
+      <span class="navbar-toggler-bar navbar-kebab"></span>
+      <span class="navbar-toggler-bar navbar-kebab"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+      
+    </div>
+  </div>
+</nav>
+
+<div class="wrapper wrapper-full-page ">
+  <div class="full-page section-image" filter-color="black" data-image="./assets/img/bg/fabio-mangione.jpg">
+    <!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
+    <div class="content">
+      <div class="container">
+        <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+          <form class="form" method="" action="">
+            <div class="card card-login card-hidden">
+              <div class="card-header ">
+                <div class="card-header ">
+                  <h3 class="header text-center">Logga in</h3>
+                </div>
+              </div>
+              <div class="card-body ">
+                <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="nc-icon nc-single-02"></i>
+                    </span>
+                  </div>
+                  <input type="text" [(ngModel)]="user.email" class="form-control" placeholder="Epost" (focus)="focus=true" (blur)="focus=false">
+                </div>
+                <div class="input-group"  [ngClass]="{'input-group-focus':focus1===true}">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="nc-icon nc-key-25"></i>
+                    </span>
+                  </div>
+                  <input type="password" [(ngModel)]="user.password" placeholder="Lösenord" class="form-control" (focus)="focus1=true" (blur)="focus1=false">
+                </div>
+              </div>
+              <div class="card-footer ">
+                <a href="javascript:void(0)" (click)="login()" class="btn btn-warning btn-round btn-block mb-3">Logga in</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer footer-black  footer-white ">
+      <div class="container">
+        <div class="row">
+          <nav class="footer-nav">
+            <ul>
+              <li>
+                <a href="#" target="_blank">Om Devoted</a>
+              </li>
+              <li>
+                <a href="#" target="_blank">Utvecklingsblog</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="credits ml-auto">
+            <span class="copyright">
+              &copy; {{test | date: 'yyyy'}}, skapad med <i class="fa fa-heart heart"></i> av Devoted-teamet
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-admin-demo": {
+    "pd-pro-angularcli": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -11,67 +11,59 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "preserveSymlinks": true,
             "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "tsConfig": "src/tsconfig.app.json",
             "polyfills": "src/polyfills.ts",
+            "allowedCommonJsDependencies": [
+              "chart.js",
+              "rxjs/add/operator/filter"
+            ],
             "assets": [
               "src/assets",
-              "src/favicon.ico",
-              "src/favicon.png",
-              {
-                "glob": "**/*",
-                "input": "node_modules/leaflet/dist/images",
-                "output": "/assets/img/markers"
-              }
+              "src/favicon.ico"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.css",
-              "node_modules/typeface-exo/index.css",
-              "node_modules/roboto-fontface/css/roboto/roboto-fontface.css",
-              "node_modules/ionicons/scss/ionicons.scss",
-              "node_modules/@fortawesome/fontawesome-free/css/all.css",
-              "node_modules/socicon/css/socicon.css",
-              "node_modules/nebular-icons/scss/nebular-icons.scss",
-              "node_modules/pace-js/templates/pace-theme-flash.tmpl.css",
-              "node_modules/leaflet/dist/leaflet.css",
-              "src/app/@theme/styles/styles.scss"
+              "node_modules/perfect-scrollbar/css/perfect-scrollbar.css",
+              "node_modules/sweetalert2/src/sweetalert2.scss",
+              "src/assets/scss/paper-dashboard.scss",
+              "src/assets/css/demo.css"
             ],
             "scripts": [
-              "node_modules/pace-js/pace.min.js",
-              "node_modules/tinymce/tinymce.min.js",
-              "node_modules/tinymce/themes/modern/theme.min.js",
-              "node_modules/tinymce/plugins/link/plugin.min.js",
-              "node_modules/tinymce/plugins/paste/plugin.min.js",
-              "node_modules/tinymce/plugins/table/plugin.min.js",
-              "node_modules/echarts/dist/echarts.min.js",
-              "node_modules/echarts/dist/extension/bmap.min.js",
-              "node_modules/chart.js/dist/Chart.min.js"
-            ],
-            "allowedCommonJsDependencies": [
-              "angular2-chartjs",
-              "echarts",
-              "lodash",
-              "zrender/lib/svg/svg",
-              "zrender/lib/vml/vml"
-            ],
-            "vendorChunk": true,
-            "extractLicenses": false,
-            "buildOptimizer": false,
-            "sourceMap": true,
-            "optimization": false,
-            "namedChunks": true
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/popper.js/dist/umd/popper.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js",
+              "node_modules/moment/moment.js",
+              "node_modules/chart.js/dist/Chart.min.js",
+              "node_modules/chartist/dist/chartist.js",
+              "node_modules/twitter-bootstrap-wizard/jquery.bootstrap.wizard.js",
+              "node_modules/bootstrap-notify/bootstrap-notify.js",
+              "node_modules/easy-pie-chart/dist/jquery.easypiechart.js",
+              "node_modules/fullcalendar/dist/fullcalendar.min.js",
+              "node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js",
+              "node_modules/jvectormap/jquery-jvectormap.min.js",
+              "node_modules/jvectormap/lib/jquery-mousewheel.js",
+              "node_modules/jvectormap/tests/assets/jquery-jvectormap-map.js",
+              "node_modules/jvectormap/tests/assets/jquery-jvectormap-world-mill-en.js",
+              "node_modules/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js",
+              "node_modules/nouislider/distribute/nouislider.min.js",
+              "node_modules/datatables.net/js/jquery.dataTables.js",
+              "node_modules/datatables.net-bs4/js/dataTables.bootstrap4.js",
+              "node_modules/datatables.net-colreorder-bs4/js/colReorder.bootstrap4.js",
+              "node_modules/datatables.net-fixedcolumns-bs4/js/fixedColumns.bootstrap4.js",
+              "node_modules/datatables.net-fixedheader-bs4/js/fixedHeader.bootstrap4.js",
+              "node_modules/datatables.net-scroller-bs4/js/scroller.bootstrap4.js",
+              "node_modules/datatables.net-select-bs4/js/select.bootstrap4.js",
+              "node_modules/bootstrap-select/dist/js/bootstrap-select.js",
+              "node_modules/@adactive/bootstrap-tagsinput/dist/bootstrap-tagsinput.js",
+              "node_modules/jasny-bootstrap/dist/js/jasny-bootstrap.min.js",
+              "node_modules/sweetalert2/dist/sweetalert2.js",
+              "src/assets/js/jquery.validate.min.js"
+            ]
           },
           "configurations": {
             "production": {
-              "budgets": [
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb"
-                }
-              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -85,25 +77,44 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ]
+            },
+            "development": {
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "buildOptimizer": false,
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": false,
+                  "inlineCritical": true
+                },
+                "fonts": true
+              },
+              "outputHashing": "all"
             }
-          },
-          "defaultConfiguration": ""
+          }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngx-admin-demo:build"
+            "browserTarget": "pd-pro-angularcli:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngx-admin-demo:build:production"
-            }
+              "browserTarget": "pd-pro-angularcli:build:production"
+            },
+            "development": {
+              "browserTarget": "argon-design-system-angular:build:development"
+            },
+            "defaultConfiguration": "development"
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-admin-demo:build"
+            "browserTarget": "pd-pro-angularcli:build"
           }
         },
         "test": {
@@ -114,36 +125,45 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
             "scripts": [
-              "node_modules/pace-js/pace.min.js",
-              "node_modules/tinymce/tinymce.min.js",
-              "node_modules/tinymce/themes/modern/theme.min.js",
-              "node_modules/tinymce/plugins/link/plugin.min.js",
-              "node_modules/tinymce/plugins/paste/plugin.min.js",
-              "node_modules/tinymce/plugins/table/plugin.min.js",
-              "node_modules/echarts/dist/echarts.min.js",
-              "node_modules/echarts/dist/extension/bmap.min.js",
-              "node_modules/chart.js/dist/Chart.min.js"
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/popper.js/dist/umd/popper.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js",
+              "node_modules/moment/moment.js",
+              "node_modules/chart.js/dist/Chart.min.js",
+              "node_modules/chartist/dist/chartist.js",
+              "node_modules/twitter-bootstrap-wizard/jquery.bootstrap.wizard.js",
+              "node_modules/bootstrap-notify/bootstrap-notify.js",
+              "node_modules/easy-pie-chart/dist/jquery.easypiechart.js",
+              "node_modules/fullcalendar/dist/fullcalendar.js",
+              "node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js",
+              "node_modules/jvectormap/jquery-jvectormap.min.js",
+              "node_modules/jvectormap/lib/jquery-mousewheel.js",
+              "node_modules/jvectormap/tests/assets/jquery-jvectormap-map.js",
+              "node_modules/jvectormap/tests/assets/jquery-jvectormap-world-mill-en.js",
+              "node_modules/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js",
+              "node_modules/nouislider/distribute/nouislider.min.js",
+              "node_modules/datatables.net/js/jquery.dataTables.js",
+              "node_modules/datatables.net-bs4/js/dataTables.bootstrap4.js",
+              "node_modules/datatables.net-colreorder-bs4/js/colReorder.bootstrap4.js",
+              "node_modules/datatables.net-fixedcolumns-bs4/js/fixedColumns.bootstrap4.js",
+              "node_modules/datatables.net-fixedheader-bs4/js/fixedHeader.bootstrap4.js",
+              "node_modules/datatables.net-scroller-bs4/js/scroller.bootstrap4.js",
+              "node_modules/datatables.net-select-bs4/js/select.bootstrap4.js",
+              "node_modules/bootstrap-select/dist/js/bootstrap-select.js",
+              "node_modules/@adactive/bootstrap-tagsinput/dist/bootstrap-tagsinput.js",
+              "node_modules/jasny-bootstrap/dist/js/jasny-bootstrap.min.js",
+              "node_modules/sweetalert2/dist/sweetalert2.js",
+              "src/assets/js/jquery.validate.min.js"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.css",
-              "node_modules/typeface-exo/index.css",
-              "node_modules/roboto-fontface/css/roboto/roboto-fontface.css",
-              "node_modules/ionicons/scss/ionicons.scss",
-              "node_modules/font-awesome/scss/font-awesome.scss",
-              "node_modules/socicon/css/socicon.css",
-              "node_modules/nebular-icons/scss/nebular-icons.scss",
-              "node_modules/pace-js/templates/pace-theme-flash.tmpl.css",
-              "src/app/@theme/styles/styles.scss"
+              "node_modules/perfect-scrollbar/css/perfect-scrollbar.css",
+              "node_modules/sweetalert2/src/sweetalert2.scss",
+              "src/assets/scss/paper-dashboard.scss",
+              "src/assets/css/demo.css"
             ],
             "assets": [
               "src/assets",
-              "src/favicon.ico",
-              "src/favicon.png",
-              {
-                "glob": "**/*",
-                "input": "node_modules/leaflet/dist/images",
-                "output": "/assets/img/markers"
-              }
+              "src/favicon.ico"
             ]
           }
         },
@@ -154,13 +174,12 @@
               "src/tsconfig.app.json",
               "src/tsconfig.spec.json"
             ],
-            "typeCheck": true,
             "exclude": []
           }
         }
       }
     },
-    "ngx-admin-demo-e2e": {
+    "pd-pro-angularcli-e2e": {
       "root": "",
       "sourceRoot": "",
       "projectType": "application",
@@ -169,7 +188,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "ngx-admin-demo:serve"
+            "devServerTarget": "pd-pro-angularcli:serve"
           }
         },
         "lint": {
@@ -184,14 +203,17 @@
       }
     }
   },
-  "defaultProject": "ngx-admin-demo",
+  "defaultProject": "pd-pro-angularcli",
   "schematics": {
     "@schematics/angular:component": {
-      "prefix": "ngx",
-      "style": "scss"
+      "prefix": "app",
+      "styleext": "css"
     },
     "@schematics/angular:directive": {
-      "prefix": "ngx"
+      "prefix": "app"
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

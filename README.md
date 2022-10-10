@@ -1,102 +1,319 @@
-# ngx-admin [<img src="https://i.imgur.com/oMcxwZ0.png" alt="Eva Design System" height="20px" />](https://eva.design?utm_campaign=eva_design%20-%20home%20-%20ngx_admin%20github%20readme&utm_source=ngx_admin&utm_medium=referral&utm_content=top_status_tile) [![Build Status](https://travis-ci.org/akveo/ngx-admin.svg?branch=master)](https://travis-ci.org/akveo/ngx-admin)
+# [Paper Dashboard Pro Angular](https://demos.creative-tim.com/paper-dashboard-pro-angular) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Paper%20Dashboard%20PRO%20Angular%20by%20Creative%20Tim%20https%3A//demos.creative-tim.com/paper-dashboard-pro-angular%20via%20%40CreativeTim)
 
-[Who uses ngx-admin?](https://github.com/akveo/ngx-admin/issues/1645)| [Documentation](https://akveo.github.io/ngx-admin?utm_campaign=ngx_admin%20-%20home%20-%20ngx_admin%20github%20readme&utm_source=ngx_admin&utm_medium=referral&utm_content=github_readme_documentation_link) | [Installation Guidelines](https://akveo.github.io/ngx-admin/docs/getting-started/what-is-ngxadmin?utm_campaign=ngx_admin%20-%20home%20-%20ngx_admin%20github%20readme&utm_source=ngx_admin&utm_medium=referral&utm_content=github_readme_installation_guidelines) | [Angular templates](https://www.akveo.com/templates?utm_campaign=services%20-%20github%20-%20templates&utm_source=ngx_admin&utm_medium=referral&utm_content=github%20readme%20top%20angular%20templates%20link)
 
-# Installation notes
+![version](https://img.shields.io/badge/version-1.5.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/ct-paper-dashboard-pro-angular.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-paper-dashboard-pro-angular/issues?q=is%3Aopen+is%3Aissue) [![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/creativetimofficial/ct-paper-dashboard-pro-angular.svg?maxAge=259200)](https://github.com/creativetimofficial/ct-paper-dashboard-pro-angular/issues?q=is%3Aissue+is%3Aclosed)  [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
-To install ngx-admin you have to use NodeJS version 14.14+ because of [node-sass](https://github.com/sass/node-sass) version utilized in the application.
+![Product Gif](https://media.giphy.com/media/5WJf1Jp5C0Ve1I2nne/giphy.gif)
 
-# Material theme for ngx-admin
+**[Paper Dashboard PRO Angular](https://www.creative-tim.com/product/paper-dashboard-pro-angular/)** is the premium version for the [Paper Dashboard Angular](https://www.creative-tim.com/product/paper-dashboard-angular), which is available for free download.
 
-Material admin theme is based on the most popular Angular dashboard template - [ngx-admin](https://akveo.github.io/ngx-admin?utm_campaign=ngx_admin%20-%20home%20-%20ngx_admin%20github%20readme&utm_source=ngx_admin_material&utm_medium=referral&utm_content=github_readme)
-To use material theme checkout `feat/material-theme` branch.
 
-## Key features
+During the development of this dashboard, we have used many existing resources from awesome developers. We want to thank them for providing their tools open source:
 
-- The most popular and trusted Angular open source dashboard template is out there. Used by hundreds of thousands developers worldwide and Fortune 500 companies\*.
-- Over 40+ Angular Components and 60+ Usage Examples. Kick off your project and save money by using ngx-admin.
-- Already using ngx-admin and willing to switch to material theme? Material theme is backward-compatible. Check out the article describing how to do that.
-- ngx-admin material works perfectly with Angular Material and Nebular. Take the best from both!
+* [Robert McIntosh](https://github.com/mouse0270) for the notification system
+* [Chartist](https://gionkunz.github.io/chartist-js/) for the wonderful charts
+* [Tristan Edwards](https://twitter.com/t4t5) for the [Sweet Alert](http://limonte.github.io/sweetalert2/)
+* [Eonasdan](https://github.com/Eonasdan) for the [DateTimPicker](https://eonasdan.github.io/bootstrap-datetimepicker/)
+* Kirill Lebedev for [jVector Maps](http://jvectormap.com/)
+* [Vincent Gabriel](https://twitter.com/gabrielva) for the [Bootstrap Wizard](https://github.com/VinceG/twitter-bootstrap-wizard)
+* [FullCalendar.io](https://fullcalendar.io/) for the awesome Calendar
 
-### To use material theme checkout `feat/material-theme` branch
+Let us know your thoughts below. And good luck with development!
 
-# Admin template based on Angular 12+ and <a href="https://github.com/akveo/nebular">Nebular</a>
+## Table of Contents
 
-<a target="_blank" href="https://akveo.com/ngx-admin/pages/dashboard?theme=corporate&utm_campaign=ngx_admin%20-%20demo%20-%20ngx_admin%20github%20readme&utm_source=ngx_admin&utm_medium=referral&utm_content=hero_banner_corporate"><img src="https://i.imgur.com/mFdqvgG.png"/></a>
+* [Versions](#versions)
+* [Demo](#demo)
+* [Quick Start](#quick-start)
+* [Terminal Commands](#terminal-commands)
+* [Documentation](#documentation)
+* [File Structure](#file-structure)
+* [Browser Support](#browser-support)
+* [Resources](#resources)
+* [Reporting Issues](#reporting-issues)
+* [Technical Support or Questions](#technical-support-or-questions)
+* [Licensing](#licensing)
+* [Useful Links](#useful-links)
 
-### UI Bakery
 
-Try low-code internal tool builder for free
-<a href="https://uibakery.io/?utm_source=github&utm_medium=clicks&utm_campaign=banner"><img src="https://user-images.githubusercontent.com/6151971/125071660-41f84900-e0c2-11eb-882a-0c675eb1e5e3.png"></a>
+## Versions
 
-[Check out our Store](https://store.akveo.com/pages/all-collections?utm_campaign=akveo_store%20-%20all%20bundles%20-%20ngx_admin%20github%20readme&utm_source=ngx_admin&utm_medium=referral%20&utm_content=check_out_our_store) for ready to use Backend Bundles.
+## Versions
 
-### Templates
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/paper-dashboard-2-pro)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/angular-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/paper-dashboard-pro-angular)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/vue-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/vue-paper-dashboard-pro)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/paper-dashboard-pro-react)
 
-<a href="https://www.akveo.com/templates/fleet-management-dashboard?utm_campaign=services%20[…]x-admin%20&utm_medium=referral%20&utm_content=github_banner%20"><img src="https://i.imgur.com/Z8EwGfh.png"></a>
+| Angular | HTML | React | Vue |
+| --- | --- | --- | --- |
+|[![Paper Dashboard Pro Angular](https://github.com/creativetimofficial/public-assets/blob/master/paper-dashboard-2-pro-angular/opt_pdp_angular_thumbnail.jpg?raw=true) | [![Paper Dashboard 2 Pro HTML](https://github.com/creativetimofficial/public-assets/blob/master/paper-dashboard-2-pro-html/opt_pd2p_thumbnail.jpg?raw=true)| [![Paper Dashboard Pro React](https://github.com/creativetimofficial/public-assets/blob/master/vue-paper-dashboard-2-pro/vue-paper-dashboard-2-pro.jpg?raw=true)| [![Vue Paper Dashboard Pro](https://github.com/creativetimofficial/public-assets/blob/master/paper-dashboard-2-pro-react/opt_pdp_react.jpg?raw=true)
 
-### With 6 stunning visual themes
+## Demo
 
-| <a target="_blank" href="https://www.akveo.com/ngx-admin/pages/dashboard?theme=material-dark&utm_campaign=ngx_admin%20-%20demo%20-%20ngx_admin%20docs&utm_source=ngx_admin&utm_medium=referral&utm_content=ngx_admin_material_themes_material_dark"><img src="https://i.imgur.com/67YAlhf.png"/></a> | <a target="_blank" href="https://www.akveo.com/ngx-admin/pages/dashboard?theme=material-light&utm_campaign=ngx_admin%20-%20demo%20-%20ngx_admin%20docs&utm_source=ngx_admin&utm_medium=referral&utm_content=ngx_admin_material_themes_material_light"><img src="https://i.imgur.com/aQzw0hD.png"/></a> |
-| --- | --- |
-|  Material Dark | Material Light |
+- [Start page](https://demos.creative-tim.com/paper-dashboard-pro-angular)
+- [Widgets page](https://demos.creative-tim.com/paper-dashboard-pro-angular/widgets)
+- [Tables page ](https://demos.creative-tim.com/paper-dashboard-pro-angular/tables/extended)
+- [Maps Page](https://demos.creative-tim.com/paper-dashboard-pro-angular/maps/google)
+- [Notifications page](https://demos.creative-tim.com/paper-dashboard-pro-angular/components/notifications)
+- [Charts page](https://demos.creative-tim.com/paper-dashboard-pro-angular/charts)
 
-| <a target="_blank" href="https://www.akveo.com/ngx-admin/pages/dashboard?theme=dark&utm_campaign=ngx_admin%20-%20demo%20-%20ngx_admin%20github%20readme&utm_source=ngx_admin&utm_medium=referral&utm_content=github_readme_theme_dark"><img src="https://i.imgur.com/9UkTGgr.png"/></a> | <a target="_blank" href="https://akveo.com/ngx-admin/pages/dashboard?theme=default&utm_campaign=ngx_admin%20-%20demo%20-%20ngx_admin%20github%20readme&utm_source=ngx_admin&utm_medium=referral&utm_content=github_readme_theme_default"><img src="https://i.imgur.com/Kn3xDKQ.png"/></a> |
-| --- | --- |
-|  Dark| Default |
+[View More](https://demos.creative-tim.com/paper-dashboard-pro-angular).
 
-| <a target="_blank" href="https://www.akveo.com/ngx-admin/pages/dashboard?theme=cosmic&utm_campaign=ngx_admin%20-%20demo%20-%20ngx_admin%20github%20readme&utm_source=ngx_admin&utm_medium=referral&utm_content=github_readme_theme_cosmic"><img src="https://i.imgur.com/iJu2YDF.png"/></a> | <a target="_blank" href="https://www.akveo.com/ngx-admin/pages/dashboard?theme=corporate&utm_campaign=ngx_admin%20-%20demo%20-%20ngx_admin%20github%20readme&utm_source=ngx_admin&utm_medium=referral&utm_content=github_readme_theme_corporate"><img src="https://i.imgur.com/GpUt6NW.png"/></a> |
-| --- | --- |
-| Cosmic  | Corporate |
 
-### What's included:
+## Quick start
 
-- Angular 12+ & Typescript
-- Bootstrap 4+ & SCSS
-- Responsive layout
-- RTL support
-- High resolution
-- Flexibly configurable themes with **hot-reload** (3 themes included)
-- Authentication module with multiple providers
-- 40+ Angular Components
-- 60+ Usage Examples
+Quick start options:
 
-### Demo
+- Buy from [Creative Tim](https://www.creative-tim.com/product/paper-dashboard-pro-angular)
 
-<a target="_blank" href="http://www.akveo.com/ngx-admin/?utm_campaign=ngx_admin%20-%20demo%20-%20ngx_admin%20github%20readme&utm_source=ngx_admin&utm_medium=referral&utm_content=live_demo_link">Live Demo</a>
+## Terminal Commands
+
+1. Install NodeJs from [NodeJs Official Page](https://nodejs.org/en).
+2. Open Terminal
+3. Go to your file project
+4. Run in terminal: ```npm install -g @angular/cli```
+5. Then: ```npm install```
+6. And: ```ng serve```
+7. Navigate to: [http://localhost:4200/](http://localhost:4200/)
 
 ## Documentation
+The documentation for the Paper Dashboard Pro Angular is hosted at our [website](https://demos.creative-tim.com/paper-dashboard-pro-angular/documentation/tutorial).
 
-This template is using [Nebular](https://github.com/akveo/nebular) modules set, [here you can find documentation and other useful articles](https://akveo.github.io/nebular/docs/guides/install-based-on-starter-kit?utm_campaign=nebular%20-%20docs%20-%20ngx_admin%20github%20readme&utm_source=ngx_admin&utm_medium=referral&utm_content=documentation_useful_articles).
 
-### Empty starter kit
+## File Structure
 
-Don't need all the pages and modules and just looking for an empty starter kit for your next project? Check out our [starter-kit branch](https://github.com/akveo/ngx-admin/tree/starter-kit).
+Within the download you'll find the following directories and files:
 
-## BrowserStack
+```
+paper-dashboard-pro-angular/
+├── CHANGELOG.md
+├── README.md
+├── angular.json
+├── documentation
+│   ├── css
+│   ├── js
+│   └── tutorial-components.html
+├── e2e
+├── karma.conf.js
+├── package.json
+├── protractor.conf.js
+├── src
+│   ├── app
+│   │   ├── app.component.html
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   ├── app.module.ts
+│   │   ├── app.routing.ts
+│   │   ├── calendar
+│   │   │   ├── calendar.component.html
+│   │   │   ├── calendar.component.ts
+│   │   │   ├── calendar.module.ts
+│   │   │   └── calendar.routing.ts
+│   │   ├── charts
+│   │   │   ├── charts.component.html
+│   │   │   ├── charts.component.ts
+│   │   │   ├── charts.module.ts
+│   │   │   └── charts.routing.ts
+│   │   ├── components
+│   │   │   ├── buttons
+│   │   │   │   ├── buttons.component.html
+│   │   │   │   └── buttons.component.ts
+│   │   │   ├── components.module.ts
+│   │   │   ├── components.routing.ts
+│   │   │   ├── grid
+│   │   │   │   ├── grid.component.html
+│   │   │   │   └── grid.component.ts
+│   │   │   ├── icons
+│   │   │   │   ├── icons.component.html
+│   │   │   │   └── icons.component.ts
+│   │   │   ├── notifications
+│   │   │   │   ├── notifications.component.html
+│   │   │   │   └── notifications.component.ts
+│   │   │   ├── panels
+│   │   │   │   ├── panels.component.html
+│   │   │   │   └── panels.component.ts
+│   │   │   ├── sweetalert
+│   │   │   │   ├── sweetalert.component.html
+│   │   │   │   └── sweetalert.component.ts
+│   │   │   └── typography
+│   │   │       ├── typography.component.html
+│   │   │       └── typography.component.ts
+│   │   ├── dashboard
+│   │   │   ├── dashboard.component.html
+│   │   │   ├── dashboard.component.ts
+│   │   │   ├── dashboard.module.ts
+│   │   │   └── dashboard.routing.ts
+│   │   ├── forms
+│   │   │   ├── equal-validator.directive.ts
+│   │   │   ├── extendedforms
+│   │   │   │   ├── extendedforms.component.html
+│   │   │   │   └── extendedforms.component.ts
+│   │   │   ├── forms.module.ts
+│   │   │   ├── forms.routing.ts
+│   │   │   ├── regularforms
+│   │   │   │   ├── regularforms.component.html
+│   │   │   │   └── regularforms.component.ts
+│   │   │   ├── validationforms
+│   │   │   │   ├── password-validator.component.ts
+│   │   │   │   ├── validationforms.component.html
+│   │   │   │   └── validationforms.component.ts
+│   │   │   └── wizard
+│   │   │       ├── wizard.component.html
+│   │   │       └── wizard.component.ts
+│   │   ├── layouts
+│   │   │   ├── admin
+│   │   │   │   ├── admin-layout.component.html
+│   │   │   │   └── admin-layout.component.ts
+│   │   │   └── auth
+│   │   │       ├── auth-layout.component.html
+│   │   │       └── auth-layout.component.ts
+│   │   ├── maps
+│   │   │   ├── fullscreenmap
+│   │   │   │   ├── fullscreenmap.component.html
+│   │   │   │   └── fullscreenmap.component.ts
+│   │   │   ├── googlemaps
+│   │   │   │   ├── googlemaps.component.html
+│   │   │   │   └── googlemaps.component.ts
+│   │   │   ├── maps.module.ts
+│   │   │   ├── maps.routing.ts
+│   │   │   └── vectormaps
+│   │   │       ├── vectormaps.component.html
+│   │   │       └── vectormaps.component.ts
+│   │   ├── pages
+│   │   │   ├── lock
+│   │   │   │   ├── lock.component.html
+│   │   │   │   └── lock.component.ts
+│   │   │   ├── login
+│   │   │   │   ├── login.component.html
+│   │   │   │   └── login.component.ts
+│   │   │   ├── pages.module.ts
+│   │   │   ├── pages.routing.ts
+│   │   │   └── register
+│   │   │       ├── register.component.html
+│   │   │       └── register.component.ts
+│   │   ├── shared
+│   │   │   ├── fixedplugin
+│   │   │   │   ├── fixedplugin.component.html
+│   │   │   │   ├── fixedplugin.component.ts
+│   │   │   │   └── fixedplugin.module.ts
+│   │   │   ├── footer
+│   │   │   │   ├── footer.component.html
+│   │   │   │   ├── footer.component.ts
+│   │   │   │   └── footer.module.ts
+│   │   │   └── navbar
+│   │   │       ├── navbar.component.html
+│   │   │       ├── navbar.component.ts
+│   │   │       └── navbar.module.ts
+│   │   ├── sidebar
+│   │   │   ├── sidebar.component.html
+│   │   │   ├── sidebar.component.ts
+│   │   │   └── sidebar.module.ts
+│   │   ├── tables
+│   │   │   ├── datatable.net
+│   │   │   │   ├── datatable.component.html
+│   │   │   │   └── datatable.component.ts
+│   │   │   ├── extendedtable
+│   │   │   │   ├── extendedtable.component.html
+│   │   │   │   └── extendedtable.component.ts
+│   │   │   ├── regulartable
+│   │   │   │   ├── regulartable.component.html
+│   │   │   │   └── regulartable.component.ts
+│   │   │   ├── tables.module.ts
+│   │   │   └── tables.routing.ts
+│   │   ├── timeline
+│   │   │   ├── timeline.component.html
+│   │   │   ├── timeline.component.ts
+│   │   │   ├── timeline.module.ts
+│   │   │   └── timeline.routing.ts
+│   │   ├── userpage
+│   │   │   ├── user.component.html
+│   │   │   ├── user.component.ts
+│   │   │   ├── user.module.ts
+│   │   │   └── user.routing.ts
+│   │   └── widgets
+│   │       ├── widgets.component.html
+│   │       ├── widgets.component.spec.ts
+│   │       ├── widgets.component.ts
+│   │       ├── widgets.module.ts
+│   │       └── widgets.routing.ts
+│   ├── assets
+│   │   ├── css
+│   │   ├── fonts
+│   │   ├── img
+│   │   ├── js
+│   │   └── scss
+│   │       ├── paper-dashboard
+│   │       └── paper-dashboard.scss
+│   ├── environments
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── main.ts
+│   ├── polyfills.ts
+│   ├── test.ts
+│   ├── tsconfig.app.json
+│   ├── tsconfig.spec.json
+│   └── typings.d.ts
+├── tsconfig.json
+├── tslint.json
+├── typings
+└── typings.json
 
-This project runs its tests on multiple desktop and mobile browsers using [BrowserStack](http://www.browserstack.com).
+```
 
-<img src="https://cloud.githubusercontent.com/assets/131406/22254249/534d889e-e254-11e6-8427-a759fb23b7bd.png" height="40" />
+## Browser Support
 
-## More from Akveo
+At present, we officially aim to support the last two versions of the following browsers:
 
-- [Eva Icons](https://github.com/akveo/eva-icons) - 480+ beautiful Open Source icons
-- [Nebular](https://github.com/akveo/nebular) - Angular Components, Auth and Security
-- [Akveo templates](https://www.akveo.com/templates?utm_campaign=services%20-%20github%20-%20templates&utm_source=ngx_admin&utm_medium=referral&utm_content=ngx_admin%20github%20readme%20more%20from%20akveo%20link) - 10+ Ready-to-use apps templates to speed up your apps developments
+<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
 
-### How can I support developers?
 
-- Star our GitHub repo :star:
-- Create pull requests, submit bugs, suggest new features or documentation updates :wrench:
-- Follow us on [Twitter](https://twitter.com/akveo_inc) :feet:
-- Like our page on [Facebook](https://www.facebook.com/akveo/) :thumbsup:
+## Resources
+- [Live Preview](https://demos.creative-tim.com/paper-dashboard-pro-angular)
+- Buy Page: https://www.creative-tim.com/product/paper-dashboard-pro-angular
+- Documentation is [here](https://demos.creative-tim.com/paper-dashboard-pro-angular/documentation/tutorial)
+- License Agreement: https://www.creative-tim.com/license
+- Support: https://www.creative-tim.com/contact-us
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/ct-paper-dashboard-pro-angular/issues)
+- Paper Dashboard Angular- [demo](https://www.creative-tim.com/product/paper-dashboard-angular?ref=github-pd-pro-angular)
+- For Front End Development - [Paper Kit Pro ](https://www.creative-tim.com/product/paper-kit-2-pro-angular?ref=github-pd-pro)
 
-### Looking for engineering services? 
+## Reporting Issues
+We use GitHub Issues as the official bug tracker for the Paper Dashboard Pro Angular. Here are some advices for our users that want to report an issue:
 
-Visit [our homepage](https://www.akveo.com?utm_campaign=services%20-%20akveo%20website%20-%20ngx_admin%20github%20readme&utm_source=ngx_admin&utm_medium=referral&utm_content=looking_for_engineering_services_visit_homepage) or simply leave us a message to [contact@akveo.com](mailto:contact@akveo.com). We will be happy to work with you!
+1. Make sure that you are using the latest version of the Paper Dashboard Pro Angular. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
+2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
+3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
-### From Developers
+## Technical Support or Questions
 
-Made with :heart: by [Akveo team](https://www.akveo.com?utm_campaign=services%20-%20akveo%20website%20-%20ngx_admin%20github%20readme&utm_source=ngx_admin&utm_medium=referral&utm_content=from_developers_made_by). Follow us on [Twitter](https://twitter.com/akveo_inc) to get the latest news first!
-We're always happy to receive your feedback!
+If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us) instead of opening an issue.
+
+## Licensing
+
+- Copyright 2018 Creative Tim (https://www.creative-tim.com)
+- Creative Tim [license](https://www.creative-tim.com/license)
+
+## Useful Links
+
+- [More products](https://www.creative-tim.com/bootstrap-themes) from Creative Tim
+
+- [Angular products](https://www.creative-tim.com/bootstrap-themes/angular-themes) from Creative Tim
+
+- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
+
+- [Freebies](https://www.creative-tim.com/bootstrap-themes/free) from Creative Tim
+
+- [Affiliate Program](https://www.creative-tim.com/affiliates/new) (earn money)
+
+##### Social Media
+
+Twitter: <https://twitter.com/CreativeTim>
+
+Facebook: <https://www.facebook.com/CreativeTim>
+
+Dribbble: <https://dribbble.com/creativetim>
+
+Google+: <https://plus.google.com/+CreativetimPage>
+
+Instagram: <https://instagram.com/creativetimofficial>
